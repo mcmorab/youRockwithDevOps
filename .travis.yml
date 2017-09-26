@@ -6,13 +6,15 @@ node_js:
 script:
 - sleep 3
 deploy:
-  provider: bluemixcloudfoundry
-  skip_cleanup: true
-  manifest: manifest.yml
-  username: $CF_ID
-  password: $CF_PWD
-  organization: $CF_ORG
-  api: $CF_TARGET
-  space: $CF_SPACE
-  on:
-    branch: master
+
+  deploy:
+    provider: bluemixcloudfoundry
+    skip_cleanup: true
+    manifest: manifest.yml
+    username: $BLUEMIX_USER
+    password: $BLUEMIX_PASSWORD
+    organization: $BLUEMIX_ORGANIZATION
+    space: $BLUEMIX_SPACE
+    api: $BLUEMIX_TARGET
+    on:
+      branch: master
