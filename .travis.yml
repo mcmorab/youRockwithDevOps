@@ -6,8 +6,6 @@ node_js:
 script:
 - sleep 3
 deploy:
-
-  deploy:
     provider: bluemixcloudfoundry
     skip_cleanup: true
     manifest: manifest.yml
