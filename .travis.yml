@@ -16,3 +16,5 @@ deploy:
     api: $BLUEMIX_TARGET
     on:
       branch: master
+#user es apikey
+#password es el string del token
