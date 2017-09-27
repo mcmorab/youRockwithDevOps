@@ -5,6 +5,7 @@ node_js:
 - 6.9.5
 script:
 - sleep 3
+- bluemix login --apikey $BLUEMIX_API_KEY
 deploy:
     provider: bluemixcloudfoundry
     skip_cleanup: true
