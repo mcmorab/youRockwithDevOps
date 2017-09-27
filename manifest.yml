@@ -3,7 +3,7 @@ applications:
   memory: 960M
   instances: 1
   domain: mybluemix.net
-  name: $app_name
-  host: $app_host
+  name: youRockwithDevOps_connie
+  host: youRockwithDevOps_connie
   disk_quota: 960M
   random-route: false
